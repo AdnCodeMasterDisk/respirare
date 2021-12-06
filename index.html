@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Respirare</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!--Material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="nav bgc2  w100">
+        <style>
+            .menumobile {
+                display: none;
+            }
+
+            .drawerhide {
+                left: -500px;
+            }
+
+            @media (max-width: 800px) {
+
+                .menu {
+                    display: none;
+                }
+
+                .menumobile {
+                    display: flex;
+                    top: 0;
+                    z-index: 50000;
+                }
+            }
+        </style>
+
+        <!-- Menu large-->
+        <div class="w100 df jce menu pf" style="top: 1px;">
+            <div class="df dfr">
+
+                <div class="link p18">
+                    <a href="#nosotros" class="body1 fc1">
+                        Nosotros
+                    </a>
+                </div>
+
+                <div class="link p18">
+                    <a href="#servicios" class="body1 fc1">
+                        Servicios
+                    </a>
+                </div>
+                <div class="link p18">
+                    <a href="#productos" class="body1 fc1">
+                        Productos
+                    </a>
+                </div>
+                <div class="link p18">
+                    <a href="#contactos" class="body1 fc1">
+                        Contáctos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Menu large-->
+
+        <!-- start drawer-->
+        <!-- Manu mobile-->
+        <div class="w100 df jce menumobile bgc1 pf">
+            <div class="w10 pt10 pb10 pointer jce df pr20">
+                <span class="material-icons fwt" id="btndrawer" onclick="draweron()"> menu </span>
+            </div>
+        </div>
+        <!-- Manu mobile-->
+        <div class="pf bgc2 fh drawer e3 drawerhide" style="width: 315px; top: 0px; z-index: 6000;" id="drawer">
+            <div class="w100 bgc2 pt40">
+                <div class="wx50 wl70 wm70 ws90 ma mt0 ">
+                    <div class="wx40 wl50 wm50 ws70 ma">
+                        <img src="img/logo.png" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ml20 mt20">
+                <div class="link p18 df faic" onclick="draweron()">
+                    <span class="material-icons fc1 mr14" style="font-size: 22px;"> add_link </span>
+                    <a href="#nosotros" class="body1 fc1">
+                        Nosotros
+                    </a>
+                </div>
+
+                <div class="link p18  dffaic" onclick="draweron()">
+                    <span class="material-icons fc1 mr14" style="font-size: 22px;"> add_link </span>
+                    <a href="#servicios" class="body1 fc1">
+                        Servicios
+                    </a>
+                </div>
+
+                <div class="link p18 df faic" onclick="draweron()">
+                    <span class="material-icons fc1 mr14" style="font-size: 22px;"> add_link </span>
+                    <a href="#productos" class="body1 fc1">
+                        Productos
+                    </a>
+                </div>
+                <div class="link p18 df faic" onclick="draweron()">
+                    <span class="material-icons fc1 mr14" style="font-size: 22px;"> add_link </span>
+                    <a href="#contactos" class="body1 fc1">
+                        Contactos
+                    </a>
+                </div>
+                <div class="link p18 df faic" onclick="draweron()">
+                    <span class="material-icons fc1 mr14" style="font-size: 22px;"> add_link </span>
+                    <a href="" class="body1 fc1">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function draweron() {
+                var drawersell = document.getElementById('drawer');
+                drawersell.classList.toggle('drawerhide')
+            }
+        </script>
+        <!-- end drawer-->
+
+
+    </div>
+
+
+
+
+
+    <header class="w100">
+        <style>
+            .contbox {
+                background-image: url(img/ilustracion\ 4.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+            }
+
+            @media (max-width: 800px) {
+                .contimg1 {
+                    display: none;
+                }
+
+                .contbox {
+                    background-image: url();
+                }
+            }
+        </style>
+
+        <div class="row contbox mt130 mb80">
+            <div class="wx50 wl70 wm80 ws90 ">
+                <h4 class="fc2 pls30 pl80">Lorem Ipsum is simply</h4>
+                <h1 class="fc1 pt80 pts50 pls30 pl80 fw6">Lorem Ipsum is simply dummy text printing </h1>
+                <div class="wx30 ws50 ml80 mls30 br1-1 tac mt100 mts60"
+                    style="background-color: transparent; box-shadow: 0px 0px 12px rgba(173, 170, 229, 0.5);">
+                    <a href="">
+                        <p class="body1 fc1 p18 fw5" style="font-size: 20px;">Login</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="fw bgc2 mt100 pb80" id="nosotros">
+
+        <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80">
+            <h2 class="fc1 fw8">Nosotros</h2>
+            <p class="body1-large fc2 mt20">Somos una asociación de profesionales en salud encargados de ofrecer
+                servicios de salud especializados en rehabilitación como es medicina, terapia respiratoria, terapia
+                física, terapia de lenguaje, enfermería, cuidados de piel incluidas curaciones de heridas y psicología.
+            </p>
+        </div>
+
+
+        <div class="wx50 wl70 wm70 ws90 ma mt40 ">
+            <div class="wx40 wl50 wm50 ws70 ma">
+                <img src="img/logo.png" alt="" class="img">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="wx70 wl70 wm70 ws90 ma mt80 pb80">
+        <div class="row">
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="w60 ma">
+                    <img src="img/img3.jpg" class="img e2" alt="" style="border-radius: 2px;">
+                </div>
+                <div class="w80 ma">
+                    <p class="body2 fc2 tac mt30"> <b>Misión</b>, Somos una empresa encargada de ofrecer servicios en
+                        salud especializados en rehabilitación respiratoria y física desde la comodidad de su hogar con
+                        la finalidad de mejorar la calidad de vida del paciente con los mejores profesionales
+                        cualificados. </p>
+                </div>
+            </div>
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="w60 ma">
+                    <img src="img/img2.jpg" class="img e2" alt="" style="border-radius: 2px;">
+                </div>
+                <div class="w80 ma">
+                    <p class="body2 fc2 tac mt30"> <b>Visión </b>, Ser una de las mejores empresas de servicios
+                        domiciliarios en salud basándonos en los instrumentos tecnológicos de vanguardia además de ser
+                        un Proveedor confiable en alquiler de equipos de oxigenoterapia con asesoría personalizada. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner 1-->
+
+
+    <div class="wx100" style="padding-bottom: 100px; background-image: url(img/img1.jpg);">
+        <div class="wx50 wl40 wm60 ws90 ma">
+            <h3 class="tac fwt fw2" style="padding-top: 150px; font-size: 24px;" data-aos="fade">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati error, blanditiis, iure sint id illo!
+            </h3>
+            <p class="body1 tac fwt f2 " style="margin-top: 20px; opacity: 0.4; font-size: 12px;" data-aos="fade">
+                Lorem ipsum dolor
+            </p>
+
+            <div class="wx10 wl20 wm30 wx40 ma o1" style="height: 1px; background-color: black; margin-top: 30px;">
+                <!--separador-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80">
+        <h2 class="fc1 fw8">Que hacemos</h2>
+        <p class="body1-large fc2 mt20">Actividades de rehabilitación enfocadas en mejorar la calidad de vida del
+            paciente por medio de terapias encaminadas a fortalecer y recuperar movilidad, resistencia, fuerza muscular
+            y la función cardiopulmonar del paciente. </p>
+    </div>
+
+    <div class="wx10 wl20 wm30 ws40 ma mb80" style="height: 1px; background-color: #97D5D0;">
+        <!--separador-->
+    </div>
+
+
+    <div class="wx70 wl70 wm70 ws90 ma mt0 mb90">
+        <div class="row faic">
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="wx80 wl80 wm80 ws100 ma">
+                    <img src="img/img1.jpg" class="img" alt="">
+                </div>
+            </div>
+            <div class="wx50 wl50 wm50 ws100">
+                <h2 class="fw8 fc1 tac pl20 pls0">
+                    Donde lo hacemos
+                </h2>
+                <p class="body1-large fc2 tal pl20 pls0 mt20">
+                    En la comodidad de su casa y en el horario requerido por cada uno de ustedes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wx70 wl70 wm70 ws90 ma mt90 mb90">
+        <div class="row faic">
+
+            <div class="wx50 wl50 wm50 ws100">
+                <h2 class="fw8 fc1 tac pl20 pls0">
+                    Como lo hacemos
+                </h2>
+                <p class="body1-large fc2 tal pl20 pls0 mt20">
+                    A través de nuestra página, redes sociales y nuestro grupo de profesionales.
+                </p>
+            </div>
+
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="wx80 wl80 wm80 ws100 ma">
+                    <img src="img/img2.jpg" class="img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="fw bgc2 mt100 pb80">
+
+        <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80">
+            <h2 class="fc1 fw8 mt20">Terapia respiratoria domiciliaria </h2>
+            <p class="body1-large fc2 mt40">Nuestro objetivo es mejorar la salud respiratoria del paciente con afección
+                y limitaciones causadas por la enfermedad respiratoria dando un confort y recuperación para mejorar su
+                calidad de vida. Se realiza una valoración inicial de la condición física y fisiológica del paciente a
+                través de una caminata de 6 minutos y una espirometría simple ademas, de exámenes clínicos previos que
+                tenga el paciente y por último implementamos una rutina diaria de ejercicios prescritos de forma
+                independiente a cada paciente según su patología respiratoria, edad y sintomatología. <br><br>
+                <b>En donde lo hacemos:</b> en la comodidad de su casa y en el horario requerido por cada uno de
+                ustedes.</p>
+        </div>
+
+
+        <div class="wx20 wl30 wm30 ws90 ma mt40 ">
+            <div class="wx40 wl50 wm50 ws70 ma">
+                <img src="img/logo.png" alt="" class="img">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- banner 1-->
+
+
+    <div class="wx100" style="padding-bottom: 100px; background-image: url(img/img5.jpg);">
+        <div class="wx50 wl40 wm60 ws90 ma">
+            <h3 class="tac fwt fw2" style="padding-top: 150px; font-size: 24px;" data-aos="fade">
+                QUE NOS HACE DIFERENTES DE LOS DEMÁS
+            </h3>
+            <p class="body1-large tac fwt f2 " style="margin-top: 20px; opacity: 1; font-size: 20px;" data-aos="fade">
+                "Ser atendidos por personal con amplia experiencia clínica y domiciliaria, además de ofrecer una
+                historia clínica individual y personal la cual esta disponible en la página web exclusivamente para el
+                paciente con resultados de nuestro programa y atención prestada."
+            </p>
+
+            <div class="wx10 wl20 wm30 wx40 ma o1" style="height: 1px; background-color: black; margin-top: 30px;">
+                <!--separador-->
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="fw bgc2  pb80" id="servicios">
+
+        <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80">
+            <h2 class="fc1 fw8">Nuestros servicios</h2>
+        </div>
+
+        <div class="wx10 wl20 wm30 ws40 ma mb80" style="height: 1px; background-color: #97D5D0;">
+            <!--separador-->
+        </div>
+
+
+        <div class="wx70 wl70 wm70 ws90 ma mt0 mb80">
+            <div class="row">
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img1.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">REHABILITACIÓN PULMONAR</h3>
+                        <p class="body2 fc2 tac">Sesión de 2-3 veces por semana por 4-12 semanas </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img3.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">TERAPIA RESPIRATORIA </h3>
+                        <p class="body2 fc2 tac">-Inhaloterapia, micronebulizacion medicada, kinesioterapia de tórax
+                            incluido manejo de secreciones
+                        </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img4.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">TERAPIA FÍSICA </h3>
+                        <p class="body2 fc2 tac">-Sesión incluye valoración y manejo osteomuscular,especializados en
+                            rehabilitación de piso pelvico </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wx70 wl70 wm70 ws90 ma mt0 mb80">
+            <div class="row">
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img1.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">TERAPIA DE LENGUAJE </h3>
+                        <p class="body2 fc2 tac">Evaluación, diagnóstico y tratamiento de las alteraciones de voz,
+                            audición, habla y lenguaje </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img3.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">TERAPIA OCUPACIONAL </h3>
+                        <p class="body2 fc2 tac">Realizamos valoración de las capacidades y limitaciones del paciente
+                        </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img4.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">ESPIROMETRÍA</h3>
+                        <p class="body2 fc2 tac">Incluye curva flujo volumen simple, espirometría pre y post
+                            broncodilatador </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wx70 wl70 wm70 ws90 ma mt0 mb80">
+            <div class="row">
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img1.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">PSICOLOGÍA </h3>
+                        <p class="body2 fc2 tac">VideoConsulta y consulta personalizada </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img3.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">MEDICINA GENERAL </h3>
+                        <p class="body2 fc2 tac">Consulta personalizada domiciliaria
+                        </p>
+                    </div>
+                </div>
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img4.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">NUTRICIÓN </h3>
+                        <p class="body2 fc2 tac">Valoración y prescripción nutricional </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wx70 wl70 wm70 ws90 ma mt0 mb80">
+            <div class="row">
+                <div class="wx33 wl33 wm33 ws100">
+                    <div class="w60 ma">
+                        <img src="img/img1.jpg" class="img" alt="">
+                    </div>
+                    <div class="w80 ma">
+                        <h3 class="fc1 fw8 tac mt20 mb10">CLÍNICA DE HERIDAS </h3>
+                        <p class="body2 fc2 tac">cuidados integrales de lesiones de piel </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- banner 1-->
+
+
+    <div class="wx100" style="padding-bottom: 100px; background-image: url(img/img4.jpg);">
+        <div class="wx50 wl40 wm60 ws90 ma">
+            <h3 class="tac fc1 fw2" style="padding-top: 150px; font-size: 24px;" data-aos="fade">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati error, blanditiis, iure sint id illo!
+            </h3>
+            <p class="body1 tac fc1 f2 " style="margin-top: 20px; opacity: 0.4; font-size: 12px;" data-aos="fade">
+                Lorem ipsum dolor
+            </p>
+
+            <div class="wx10 wl20 wm30 wx40 ma o1" style="height: 1px; background-color: black; margin-top: 30px;">
+                <!--separador-->
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80" id="productos">
+        <h2 class="fc1 fw8">Nuestros Productos</h2>
+        <p class="body1-large fc2 mt20">Lorem Ipsum is simply dummy text of the printing </p>
+        <div class="w20 ma mt30">
+            <img src="img/ilustracion3.jpg" class="img" alt="">
+        </div>
+    </div>
+
+    <div class="wx10 wl20 wm30 ws40 ma mb80" style="height: 1px; background-color: #97D5D0;">
+        <!--separador-->
+    </div>
+
+
+    <div class="wx70 wl70 wm70 ws90 ma mt0 mb90">
+        <div class="row faic">
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="wx80 wl80 wm80 ws100 ma">
+                    <img src="img/img1.jpg" class="img" alt="">
+                </div>
+            </div>
+            <div class="wx50 wl50 wm50 ws100">
+                <h2 class="fw8 fc1 tac pl20 pls0">
+                    Primer producto
+                </h2>
+                <p class="body1 fc2 tal pl20 pls0 mt20">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta a architecto qui incidunt unde quo.
+                    Sed mollitia dolore ratione recusandae adipisci enim hic eligendi perspiciatis. Amet reprehenderit
+                    odio ut illo!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wx70 wl70 wm70 ws90 ma mt90 mb90">
+        <div class="row faic">
+
+            <div class="wx50 wl50 wm50 ws100">
+                <h2 class="fw8 fc1 tac pl20 pls0">
+                    Segundo producto
+                </h2>
+                <p class="body1 fc2 tal pl20 pls0 mt20">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta a architecto qui incidunt unde quo.
+                    Sed mollitia dolore ratione recusandae adipisci enim hic eligendi perspiciatis. Amet reprehenderit
+                    odio ut illo!
+                </p>
+            </div>
+
+            <div class="wx50 wl50 wm50 ws100">
+                <div class="wx80 wl80 wm80 ws100 ma">
+                    <img src="img/img2.jpg" class="img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- banner 1-->
+
+
+    <div class="wx100" style="padding-bottom: 100px; background-image: url(img/img5.jpg);">
+        <div class="wx50 wl40 wm60 ws90 ma">
+            <h3 class="tac fc1 fw2" style="padding-top: 150px; font-size: 24px;" data-aos="fade">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati error, blanditiis, iure sint id illo!
+            </h3>
+            <p class="body1 tac fc1 f2 " style="margin-top: 20px; opacity: 0.4; font-size: 12px;" data-aos="fade">
+                Lorem ipsum dolor
+            </p>
+
+            <div class="wx10 wl20 wm30 wx40 ma o1" style="height: 1px; background-color: black; margin-top: 30px;">
+                <!--separador-->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wx70 wl70 wm80 ws90 ma tac pt150 pb100">
+        <h2 class="fc1 fw8">Nuestro Equipo de trabajo</h2>
+        <p class="body1-large fc2 mt20">Lorem Ipsum is simply dummy text of the printing </p>
+    </div>
+
+    <div class="wx10 wl20 wm30 ws40 ma mb80" style="height: 1px; background-color: #97D5D0;">
+        <!--separador-->
+    </div>
+
+    <div class="wx70 wl70 wm70 ws90 ma mt0 mb150">
+        <div class="row">
+            <div class="wx33 wl33 wm33 ws100">
+                <div class="w60 ma">
+                    <img src="img/p1.png" class="img" alt="" style="border-radius: 50%;">
+                </div>
+                <div class="w80 ma">
+                    <h3 class="fc1 fw8 tac mt20 mb10">Silvia Suarez</h3>
+                    <p class="body2 fc2 tac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptas
+                        deleniti quia neque! Fugit, totam veniam aliquid. </p>
+                </div>
+            </div>
+            <div class="wx33 wl33 wm33 ws100">
+                <div class="w60 ma">
+                    <img src="img/p2.png" class="img" alt="" style="border-radius: 50%;">
+                </div>
+                <div class="w80 ma">
+                    <h3 class="fc1 fw8 tac mt20 mb10">Rodrigo Burgos</h3>
+                    <p class="body2 fc2 tac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptas
+                        deleniti quia neque! Fugit, totam sequi numq aliquid.</p>
+                </div>
+            </div>
+            <div class="wx33 wl33 wm33 ws100">
+                <div class="w60 ma">
+                    <img src="img/p3.png" class="img" alt="" style="border-radius: 50%;">
+                </div>
+                <div class="w80 ma">
+                    <h3 class="fc1 fw8 tac mt20 mb10">Milena Perez</h3>
+                    <p class="body2 fc2 tac">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptas
+                        deleniti quia neque! Fugit, totam sequi numquam facilis . </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="fw df bgc2 mt100 pb80" style="background-color: #97D5D0;" id="contactos">
+
+        <div class="wx70 wl70 wm80 ws90 ma tac pt80 pb80 mapa">
+            <h2 class="fc1 fw8">Contáctos</h2>
+            <p class="body1-large fc1 mt20">Lorem Ipsum is simply dummy text of the printing </p>
+        </div>
+
+
+        <div class="wx70 wl70 wm80 ws90 ma df contactos">
+
+            <div class="wx50 wl50 wm50 ws100 df fcol p5 p0 imgmapa"><iframe
+                    src="  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.540621206489!2d-73.34861039180207!3d5.554975018607146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c14d385e429%3A0x6cbf24881d59e74d!2sLas%20Quintas%2C%20Tunja%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1630097725313!5m2!1ses!2sco" "
+                        width=" 100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+
+            <div class="wx50 wl50 wm50 ws100 df fcol ml20">
+                <p class=" body1 fc1 textcontactos" style="">Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Officiis, ipsum. Dicta temporibus quidem consequatur veritatis
+                    impedit
+                    saepe repellat, consequuntur, aliquid excepturi ullam eaque odit voluptatum obcaecati fuga
+                    voluptates
+                    quaerat laudantium! </p>
+                <p class="body1 fc1 tal" style="margin-top: 30px;">- 432123411 </p>
+                <p class="body1 fc1 tal" style="margin-top: 10px;">- 543231211 </p>
+                <p class="body1 fc1 tal" style="margin-top: 10px;">- correo@gmail.com </p>
+                <p class="body1 fc1 tal" style="margin-top: 10px;">- Calle N* s543 34 </p>
+                <p class="body1 fc1 tal" style="margin-top: 10px;">- Tunja - Boyacá</p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <h2 class="tac fc1 fw8 mt80 mts30"> Nuestras en Redes</h2>
+
+
+        <div class="wx8 wl8 wm30 ws50 ma mt40">
+            <img src="img/logo.png" class="img" alt="">
+        </div>
+
+
+
+        <div class="wx30 wl40 wm50 ws90 ma mt10">
+
+            <div class="row pb40 mt40">
+                <div class="p10 wx10 wl10 wm10 ws100 tac">
+                    <a href="" class="body1 fc1">facebook</a>
+                </div>
+                <div class="p10 wx10 wl10 wm10 ws100 tac">
+                    <a href="" class="body1 fc1">instagram</a>
+                </div>
+                <div class="p10 wx10 wl10 wm10 ws100 tac">
+                    <a href="" class="body1 fc1">Whatsapp</a>
+                </div>
+                <div class="p10 wx10 wl10 wm10 ws100 tac">
+                    <a href="" class="body1 fc1">youtube</a>
+                </div>
+                <div class="p10 wx10 wl10 wm10 ws100 tac">
+                    <a href="" class="body1 fc1">twiter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 200, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+
+</html>

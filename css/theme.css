@@ -1,0 +1,56 @@
+:root{
+    /* Variables color */
+    --c1: #91839e;
+    --c2: #F9F9F9;
+    --c3: #ffffff;
+    --c4: #bebdd5;
+
+    /* Valiables tiphografy */
+    --fc1: #28273d;
+    --fc2: #A8A8A8;
+    --fcwhite: #ffffff;
+    --fcblack: #000;
+
+}
+
+/* background color */
+
+.bgc1{
+    background-color: var(--c1);
+}
+
+.bgc2{
+    background-color: var(--c2);
+}
+
+.bgc3{
+    background-color: var(--c3);
+}
+
+.bgc4{
+    background-color: var(--c3);
+}
+
+
+.bgcw{
+    background-color: var(--wt);
+}
+
+/* text color */
+
+.fcolor1{
+    color: var(--fc1);
+}
+
+.fcolor2{
+    color: var(--fc2);
+}
+
+.fcolorwt{
+    color: var(--fcwhite);
+}
+
+.body1{
+    font-size: 16px;
+    opacity: 0.4;
+}
